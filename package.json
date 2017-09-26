@@ -17,7 +17,11 @@
   },
   "homepage": "https://github.com/Courtney6554/FriendFinder#readme",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "express": "^4.15.4",
-    "mysql": "^2.14.1"
+    "jQuery": "^1.7.4",
+    "jquery": "^3.2.1",
+    "mysql": "^2.14.1",
+    "path": "^0.12.7"
   }
 }

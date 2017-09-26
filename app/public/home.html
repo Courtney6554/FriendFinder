@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Friends Home</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+</head>
+<body>
+
+  <div class="container" style=background-image:url()>
+
+    <div class="jumbotron">
+      <h1 class="text-center"><span class="glyphicon glyphicon-user"></span> Friend Finder</h1>
+      <hr>
+      <h2 class="text-center">We have a group of <span id="friends"></span> friends who can't wait to meet you! <br> Find your best match here!</h2>
+      <br>
+
+      <div class="text-center">
+        <a href="/survey"><button type="button" class="btn btn-lg btn-danger"><span class="glyphicon glyphicon-pencil"></span> Take Survey</button></a>
+      </div>
+
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p><a href="/api/friends">API Friends Link</a> | <a href="https://github.com/cr6554/FriendFinder">GitHub Repo</a></p>
+      </div>
+    </footer>
+
+  </div>
+
+<script>
+  
+  $("#friends").text(0);
+  $.get("api/friends", function(data){
+    $("#friends").text(data.length);
+  });
+  
+
+</script>
+
+</body>
+</html>
