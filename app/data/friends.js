@@ -39,7 +39,7 @@ module.exports = friendsArray;
 
 // $('#submitButton').on("click", function() {
 //     if(!$('#nameEntry').val() || !$('#imageEntry').val()){
-//         alert("Complete all blanks");
+//         console.log("Complete all blanks");
 
 //     } else {
 //         userdata = 
